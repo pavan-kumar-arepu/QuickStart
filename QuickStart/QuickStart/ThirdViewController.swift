@@ -12,18 +12,18 @@ class ThirdViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        print("came to Second loadView")
+        print("came to Third loadView")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("came to Second viewDidLoad")
+        print("came to Third viewDidLoad")
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("came to Second viewWillAppear")
+        print("came to Third viewWillAppear")
 
     }
     
@@ -35,12 +35,12 @@ class ThirdViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("came to Second viewDidAppear")
+        print("came to Third viewDidAppear")
 
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("came to Second viewDidDisappear")
+        print("came to Third viewDidDisappear")
     }
 }
