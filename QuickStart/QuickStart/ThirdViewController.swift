@@ -5,43 +5,6 @@
 //  Created by Pavankumar Arepu on 16/07/2022.
 //
 
-
-/**Swift defines away large classes of common programming errors by adopting modern programming patterns:
-
-Variables are always initialized before use.
-
-Array indices are checked for out-of-bounds errors.
-
-Integers are checked for overflow.
-
-Optionals ensure that nil values are handled explicitly.
-
-Memory is managed automatically.
-
-Error handling allows controlled recovery from unexpected failures.
-**/
-
-/*
- # Basic Operators #
- * Assignment Operator
- * Reminder Operator
- * Compound Assignment Operator --> var yam = 100, yam += 100
- * Comparision Operator
- * Ternary Conditional Operator
- * Nil-Coalescing Operator --> 'a != nil ? a! : b'
- * Range Operator
- * Half-Open Range Operator
- * Logical Operators
- */
-
-
-/*
- # String & Characters #
- * String Literals
- * Empty String Initializer
- * String Mutability
- */
-
 import Foundation
 import UIKit
 

@@ -22,4 +22,8 @@
  HomeWork:
  a. Create a new application
  b. Add logs in all the methods of ViewController and some buttons in VC and connect it with a 'push' and 'modal' transitions.
+ 
+ 5. Discussed on 'Basic Operator' and UIHierachy
+ Homework:
+ a. Play with playground with the example given on 'BasicOperators.playground'
  */

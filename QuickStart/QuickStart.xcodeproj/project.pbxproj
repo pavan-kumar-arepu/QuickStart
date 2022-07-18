@@ -59,6 +59,7 @@
 		0BF434982883488F0054FAAA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0BF434A028834EB90054FAAA /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		0BF434A5288351CA0054FAAA /* CourseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseContent.swift; sourceTree = "<group>"; };
+		0BF434B12885DD6F0054FAAA /* BasicOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				0BF2EBC8287C8656008DA2D8 /* LaunchScreen.storyboard */,
 				0BF2EBCB287C8656008DA2D8 /* Info.plist */,
 				0BF2EBC3287C8654008DA2D8 /* QuickStart.xcdatamodeld */,
+				0BF434B12885DD6F0054FAAA /* BasicOperators.playground */,
 			);
 			path = QuickStart;
 			sourceTree = "<group>";
