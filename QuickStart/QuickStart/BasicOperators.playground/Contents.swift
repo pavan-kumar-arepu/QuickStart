@@ -110,3 +110,8 @@ for name in names[2...] {
 for name in names[...2] {
     print(name)
 }
+
+let dollarSign = "\u{24}"        // $,  Unicode scalar U+0024
+let blackHeart = "\u{2665}"      // ♥,  Unicode scalar U+2665
+let sparklingHeart = "\u{1F496}"
+let sparklingHeart1 = "\u{00B6}"
