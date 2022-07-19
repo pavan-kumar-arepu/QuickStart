@@ -26,4 +26,8 @@
  5. Discussed on 'Basic Operator' and UIHierachy
  Homework:
  a. Play with playground with the example given on 'BasicOperators.playground'
+ 
+ 6. Created a playground files and played with Strings, Arrays, Dictionaries.
+ Homework:
+ Please create a new playground in your local machine and see what other methods or variables are available other than what we discussed
  */
