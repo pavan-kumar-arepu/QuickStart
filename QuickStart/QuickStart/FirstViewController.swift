@@ -17,6 +17,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("came to First viewDidLoad")
+        defaultMethodWithMultipleParameterWithReturnValue(age: 30, degree: "IT")
         // Do any additional setup after loading the view.
     }
     
@@ -46,3 +47,8 @@ class FirstViewController: UIViewController {
     
 }
 
+extension FirstViewController {
+    func defaultMethodWithMultipleParameterWithReturnValue(age: Int, degree: String) -> String {
+        return "My age is \(age) and I have completed \(degree) in 2008, Congratulation, you have qualified!"
+    }
+}

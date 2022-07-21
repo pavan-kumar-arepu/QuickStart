@@ -65,21 +65,3 @@ print(welcomeMessage.endIndex)
 
 
 
-// Collection: Array, Dictionaries and Sets
-// Arrays
-
-let nameArray = ["Gopal", "Krishna", "Ram"]
-let ageArray = [12, 21, 42]
-let employeeCourse = ["DataStuctures", "OOPS", "M1"]
-let studentDetails = ["Pavan", 123, 2431.31, nameArray] as [Any]
-
-
-var employeDetails = ["age": 32, "name": "Kumar", "Occupation": "SelfEmployeed", "employeeCourse": employeeCourse] as [String : Any]
-
-
-employeDetails["age"]
-employeDetails["employeeCourse"]
-employeDetails["salary"] = 20000
-
-
-print(employeDetails)

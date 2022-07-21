@@ -41,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		0B63041D288710B9000A76FA /* Strings_Collections.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings_Collections.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0B6304212888561F000A76FA /* Array_Dictionaries_Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array_Dictionaries_Sets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0BC5E6122889B40400A49CBB /* ControlType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0BC5E61E2889B7F600A49CBB /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0BF2EBB7287C8653008DA2D8 /* QuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF2EBBA287C8653008DA2D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF2EBBC287C8653008DA2D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +129,9 @@
 				0BF2EBC3287C8654008DA2D8 /* QuickStart.xcdatamodeld */,
 				0BF434B12885DD6F0054FAAA /* BasicOperators.playground */,
 				0B63041D288710B9000A76FA /* Strings_Collections.playground */,
+				0B6304212888561F000A76FA /* Array_Dictionaries_Sets.playground */,
+				0BC5E6122889B40400A49CBB /* ControlType.playground */,
+				0BC5E61E2889B7F600A49CBB /* Functions.playground */,
 			);
 			path = QuickStart;
 			sourceTree = "<group>";
