@@ -30,4 +30,12 @@
  6. 19/07/2022 -> Created a playground files and played with Strings, Arrays, Dictionaries.
  Homework:
  Please create a new playground in your local machine and see what other methods or variables are available other than what we discussed
+ 
+ 7. 21/07/2022 -> Discussed on ControlTypes and Functions
+ Homework:
+ Please go through the playground and try to create 'enums' and consume them in 'switch' cases
+ 
+ 8. 22/07/2022 -> Added 'AdvancedFunctions' in Functions.playgound (Practice Session - No Call)
+ Homework:
+ Please go through the examples I added and create similar fuctions for other operations (Substraction, modulus)
  */
