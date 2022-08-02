@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 
 class SecondViewController: UIViewController {
+    var inputString: String?
+    
+    @IBOutlet weak var myNewLabel: UILabel!
+    
     
     override func loadView() {
         super.loadView()
@@ -19,6 +23,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         print("came to Second viewDidLoad")
         // Do any additional setup after loading the view.
+        myNewLabel.text = inputString
     }
     
     override func viewWillAppear(_ animated: Bool) {

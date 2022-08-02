@@ -82,3 +82,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+protocol HumanBeingRules {
+    func stopAtRedSignal()
+    func proceedIfGreen()
+    func readyToStartOrStopIfOrange()
+    func respectPeople()
+}

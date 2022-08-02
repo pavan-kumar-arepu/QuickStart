@@ -26,7 +26,7 @@
                                 <rect key="frame" x="184" y="640" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="iXP-1x-2CX" kind="push" id="mOr-R9-JWw"/>
+                                    <segue destination="iXP-1x-2CX" kind="push" identifier="pushSegue" id="mOr-R9-JWw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,30 +53,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-gE-l0T">
-                                <rect key="frame" x="118" y="438" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-4o-Qql">
                                 <rect key="frame" x="137" y="658" width="140" height="30"/>
                                 <state key="normal" title="Present New Screen"/>
                                 <connections>
-                                    <segue destination="K44-Yd-eS5" kind="presentation" id="ja0-Eo-4Mh"/>
+                                    <segue destination="K44-Yd-eS5" kind="presentation" identifier="modelSegue" id="ja0-Eo-4Mh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cQ-ZR-vCI">
+                                <rect key="frame" x="117.5" y="464.5" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-gE-l0T">
+                                <rect key="frame" x="117.5" y="374" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcl-3j-VbH"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="KBd-gE-l0T" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" id="8jw-WW-djD"/>
+                            <constraint firstItem="KBd-gE-l0T" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" constant="-90.5" id="8jw-WW-djD"/>
                             <constraint firstItem="ZKg-4o-Qql" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="92q-y5-rfS"/>
                             <constraint firstItem="KBd-gE-l0T" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="HP9-3A-vsR"/>
                             <constraint firstItem="bcl-3j-VbH" firstAttribute="bottom" secondItem="ZKg-4o-Qql" secondAttribute="bottom" constant="174" id="R9Q-QU-FEN"/>
+                            <constraint firstItem="5cQ-ZR-vCI" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" id="uBe-sE-FcP"/>
+                            <constraint firstItem="5cQ-ZR-vCI" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="wWH-jX-Hht"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RMU-78-eOo"/>
+                    <connections>
+                        <outlet property="myNewLabel" destination="KBd-gE-l0T" id="4Fh-WB-PZP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQ5-bj-hDf" sceneMemberID="firstResponder"/>
             </objects>

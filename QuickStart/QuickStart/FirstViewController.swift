@@ -44,14 +44,16 @@ class FirstViewController: UIViewController {
         print("came to First viewDidDisappear")
 
     }
-    
 }
 
 extension FirstViewController {
-    func defaultMethodWithMultipleParameterWithReturnValue(age: Int, degree: String) -> String {
-        return "My age is \(age) and I have completed \(degree) in 2008, Congratulation, you have qualified!"
+    func newMethod() {
+        print("came to First viewDidDisappear")
+
+    }
+    
+    func finishTask() {
+        
     }
 }
-
-
 

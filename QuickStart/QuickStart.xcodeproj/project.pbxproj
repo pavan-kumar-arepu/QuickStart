@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5A136E28998B4C00D81841 /* FirstViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */; };
 		0BF2EBBB287C8653008DA2D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2EBBA287C8653008DA2D8 /* AppDelegate.swift */; };
 		0BF2EBBD287C8653008DA2D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2EBBC287C8653008DA2D8 /* SceneDelegate.swift */; };
 		0BF2EBBF287C8653008DA2D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2EBBE287C8653008DA2D8 /* FirstViewController.swift */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5A1366289983B900D81841 /* Protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocol.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+Extension.swift"; sourceTree = "<group>"; };
 		0B63041D288710B9000A76FA /* Strings_Collections.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings_Collections.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B6304212888561F000A76FA /* Array_Dictionaries_Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array_Dictionaries_Sets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0BC5E6122889B40400A49CBB /* ControlType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -120,6 +123,7 @@
 				0BF2EBBA287C8653008DA2D8 /* AppDelegate.swift */,
 				0BF2EBBC287C8653008DA2D8 /* SceneDelegate.swift */,
 				0BF2EBBE287C8653008DA2D8 /* FirstViewController.swift */,
+				0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */,
 				0BF434982883488F0054FAAA /* SecondViewController.swift */,
 				0BF434A028834EB90054FAAA /* ThirdViewController.swift */,
 				0BF2EBC0287C8654008DA2D8 /* Main.storyboard */,
@@ -127,6 +131,7 @@
 				0BF2EBC8287C8656008DA2D8 /* LaunchScreen.storyboard */,
 				0BF2EBCB287C8656008DA2D8 /* Info.plist */,
 				0BF2EBC3287C8654008DA2D8 /* QuickStart.xcdatamodeld */,
+				0B5A1366289983B900D81841 /* Protocol.playground */,
 				0BF434B12885DD6F0054FAAA /* BasicOperators.playground */,
 				0B63041D288710B9000A76FA /* Strings_Collections.playground */,
 				0B6304212888561F000A76FA /* Array_Dictionaries_Sets.playground */,
@@ -318,6 +323,7 @@
 				0BF2EBBB287C8653008DA2D8 /* AppDelegate.swift in Sources */,
 				0BF2EBC5287C8654008DA2D8 /* QuickStart.xcdatamodeld in Sources */,
 				0BF434992883488F0054FAAA /* SecondViewController.swift in Sources */,
+				0B5A136E28998B4C00D81841 /* FirstViewController+Extension.swift in Sources */,
 				0BF434A128834EB90054FAAA /* ThirdViewController.swift in Sources */,
 				0BF2EBBD287C8653008DA2D8 /* SceneDelegate.swift in Sources */,
 			);
