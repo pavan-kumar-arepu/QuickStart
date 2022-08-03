@@ -38,7 +38,12 @@
  8. 22/07/2022 -> Added 'AdvancedFunctions' in Functions.playgound (Practice Session - No Call)
  Homework:
  Please go through the examples I added and create similar fuctions for other operations (Substraction, modulus)
+ 
  9. 02/08/2022 -> Discussed how to create a protocol, sending data from one view controller to other controller and we also discussed 'extentions'
  Homework:
  Please go through the example, we disucssed and add few more variables in secondVC and try to send more data from VC1 to VC2
+ 
+ 10. 03/08/2022 -> Discussed how to create a protocol for call back machanism and also we also replaced 'protocol' with some 'simple closure'
+ Homework:
+ Please go through the example, we disucssed and try to create few more protocols and some extra methods in it and call it from secondVC
  */

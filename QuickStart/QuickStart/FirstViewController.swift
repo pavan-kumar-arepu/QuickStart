@@ -9,6 +9,8 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var statusUpdateLabel: UILabel!
+    
     override func loadView() {
         super.loadView()
         print("came to First loadView")

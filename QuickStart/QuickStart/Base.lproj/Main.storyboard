@@ -40,6 +40,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EZg-vJ-EaA"/>
+                    <connections>
+                        <outlet property="statusUpdateLabel" destination="GvP-lo-bN9" id="AvJ-jv-7Yq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +56,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-Xx-DJe">
+                                <rect key="frame" x="175.5" y="793" width="63" height="30"/>
+                                <state key="normal" title="&lt;GoBack"/>
+                                <connections>
+                                    <action selector="goBackToFirstVC:" destination="iXP-1x-2CX" eventType="touchUpInside" id="ISB-YN-9Gp"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-4o-Qql">
                                 <rect key="frame" x="137" y="658" width="140" height="30"/>
                                 <state key="normal" title="Present New Screen"/>
@@ -79,7 +89,9 @@
                             <constraint firstItem="KBd-gE-l0T" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" constant="-90.5" id="8jw-WW-djD"/>
                             <constraint firstItem="ZKg-4o-Qql" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="92q-y5-rfS"/>
                             <constraint firstItem="KBd-gE-l0T" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="HP9-3A-vsR"/>
+                            <constraint firstItem="vHd-Xx-DJe" firstAttribute="top" secondItem="ZKg-4o-Qql" secondAttribute="bottom" constant="105" id="Iyr-cb-OQG"/>
                             <constraint firstItem="bcl-3j-VbH" firstAttribute="bottom" secondItem="ZKg-4o-Qql" secondAttribute="bottom" constant="174" id="R9Q-QU-FEN"/>
+                            <constraint firstItem="vHd-Xx-DJe" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="kN8-ml-0i4"/>
                             <constraint firstItem="5cQ-ZR-vCI" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" id="uBe-sE-FcP"/>
                             <constraint firstItem="5cQ-ZR-vCI" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="wWH-jX-Hht"/>
                         </constraints>

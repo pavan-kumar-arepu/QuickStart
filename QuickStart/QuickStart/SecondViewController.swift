@@ -9,10 +9,14 @@ import Foundation
 import UIKit
 
 class SecondViewController: UIViewController {
+    
     var inputString: String?
     
     @IBOutlet weak var myNewLabel: UILabel!
     
+    //var statusUpdateDelegate: StatusUpdate?
+    
+    var simpleClosure: ((String) -> Void)?
     
     override func loadView() {
         super.loadView()
@@ -47,5 +51,23 @@ class SecondViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print("came to Second viewDidDisappear")
+    }
+    
+    @IBAction func goBackToFirstVC(_ sender: Any) {
+        print("Tap on GoBackButton")
+        //self.statusUpdateDelegate?.updateStatus(message: "Came from SecondViewController")
+        
+        self.callToClosure()
+        self.navigationController?.popViewController(animated: true)
+    }
+}
+
+
+// Came from SecondViewController
+
+
+extension SecondViewController {
+    func callToClosure() {
+        simpleClosure?("Came from SecondViewController from Closure")
     }
 }
