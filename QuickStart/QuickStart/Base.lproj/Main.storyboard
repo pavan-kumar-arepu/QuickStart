@@ -29,18 +29,26 @@
                                     <segue destination="iXP-1x-2CX" kind="push" identifier="pushSegue" id="mOr-R9-JWw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="37N-Bo-VgU">
+                                <rect key="frame" x="87" y="217" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="GKw-t7-eIh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Nq-Xq-AoV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GKw-t7-eIh" secondAttribute="bottom" constant="192" id="3HV-lL-uGF"/>
+                            <constraint firstItem="37N-Bo-VgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="KeR-rL-qyC"/>
                             <constraint firstItem="GvP-lo-bN9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Zzp-Jf-hIb"/>
+                            <constraint firstItem="37N-Bo-VgU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.142857" id="aYM-rJ-Q8i"/>
+                            <constraint firstItem="37N-Bo-VgU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="cIl-Yn-wnI"/>
+                            <constraint firstItem="37N-Bo-VgU" firstAttribute="centerX" secondItem="GKw-t7-eIh" secondAttribute="centerX" id="peE-Kh-bxg"/>
                             <constraint firstItem="GvP-lo-bN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="way-al-2WM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EZg-vJ-EaA"/>
                     <connections>
+                        <outlet property="dataImageView" destination="37N-Bo-VgU" id="532-hY-ctm"/>
                         <outlet property="statusUpdateLabel" destination="GvP-lo-bN9" id="AvJ-jv-7Yq"/>
                     </connections>
                 </viewController>

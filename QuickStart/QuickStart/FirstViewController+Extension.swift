@@ -24,6 +24,7 @@ extension FirstViewController {
                 vc.inputString = "Value from FirstVC"
                 //vc.statusUpdateDelegate = self
                 
+                
                 vc.simpleClosure = { str in
                     self.statusUpdateLabel.text = str
                 }

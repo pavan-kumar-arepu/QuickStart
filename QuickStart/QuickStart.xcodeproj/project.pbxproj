@@ -42,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B56436728A189EA0055AEAA /* ClosureExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosureExamples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B5A1366289983B900D81841 /* Protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocol.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+Extension.swift"; sourceTree = "<group>"; };
 		0B5A1377289AD48D00D81841 /* QuickStartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartProtocols.swift; sourceTree = "<group>"; };
+		0B5A1387289C2FDD00D81841 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B63041D288710B9000A76FA /* Strings_Collections.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings_Collections.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B6304212888561F000A76FA /* Array_Dictionaries_Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array_Dictionaries_Sets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0BC5E6122889B40400A49CBB /* ControlType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -100,6 +102,7 @@
 		0BF2EBAE287C8653008DA2D8 = {
 			isa = PBXGroup;
 			children = (
+				0B56436728A189EA0055AEAA /* ClosureExamples.playground */,
 				0BF434A5288351CA0054FAAA /* CourseContent.swift */,
 				0B5A1377289AD48D00D81841 /* QuickStartProtocols.swift */,
 				0BF2EBB9287C8653008DA2D8 /* QuickStart */,
@@ -134,6 +137,7 @@
 				0BF2EBC8287C8656008DA2D8 /* LaunchScreen.storyboard */,
 				0BF2EBCB287C8656008DA2D8 /* Info.plist */,
 				0BF2EBC3287C8654008DA2D8 /* QuickStart.xcdatamodeld */,
+				0B5A1387289C2FDD00D81841 /* Closures.playground */,
 				0B5A1366289983B900D81841 /* Protocol.playground */,
 				0BF434B12885DD6F0054FAAA /* BasicOperators.playground */,
 				0B63041D288710B9000A76FA /* Strings_Collections.playground */,

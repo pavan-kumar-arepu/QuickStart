@@ -46,4 +46,8 @@
  10. 03/08/2022 -> Discussed how to create a protocol for call back machanism and also we also replaced 'protocol' with some 'simple closure'
  Homework:
  Please go through the example, we disucssed and try to create few more protocols and some extra methods in it and call it from secondVC
+ 
+ 11. 08/08/2022 -> Closure(Covered basics of Closures)
+ Ref below blog up to 'TrailingClosures'
+ https://abhimuralidharan.medium.com/functional-swift-all-about-closures-310bc8af31dd
  */
