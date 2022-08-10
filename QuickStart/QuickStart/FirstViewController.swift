@@ -22,7 +22,6 @@ class FirstViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.dataImageView.image = UIImage.init(data: receivedData)
                 }
-            
                 print("ReceivedData:", receivedData)
             }
         })

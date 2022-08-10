@@ -52,11 +52,14 @@
  https://abhimuralidharan.medium.com/functional-swift-all-about-closures-310bc8af31dd
  
  12. 09/08/2022 -> Closure(Detailed)
- Home: Practice Clsoure
+ Homework: Practice Clsoure
  Ref: https://www.appypie.com/escaping-closures-swift
  
  13. 10/08/2022 -> (Detailed)
-
+ Homework:
+ Keep label bit below of imageView(maintain 20 pixels gap vertically)
+ Keep map inbetween 'Label' and a 'button' 
+ 
 
  
  */
