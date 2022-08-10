@@ -386,3 +386,80 @@ class SomeClass {
 
 let myClassInstance = SomeClass()
 myClassInstance.doSomething()
+
+
+
+/// Trailling closure
+
+func someFunctionWithIntegerParam(number: Int, with aClosure: () -> Void) {
+    if number == 10 {
+        //execture closure
+        aClosure()
+    } else {
+        print("Condition doesn't satisfy")
+    }
+}
+
+// With out trailing closure
+someFunctionWithIntegerParam(number: 20, with: {
+    print("We are with in the closure")
+})
+
+// call the same method with 'trailing' closure syntax
+someFunctionWithIntegerParam(number: 10) {
+    print("We are in trailing closure")
+}
+
+
+
+func fdsfdsfds() {
+    // sfsafds
+    
+    
+    // fdsfsdfs
+    
+    // func() with in func(a piece of code) {
+    
+}
+
+
+func travel(action: () -> Void) {
+    print("Hey I am about to start!")
+    
+    action()
+    
+    print("Hey I reached Home!")
+}
+
+
+travel {
+    print("I was on bus")
+}
+
+
+
+/// Escaping closure
+
+class TaskManager {
+    var onTaskFinished: (() -> Void)?
+    
+    func startLenghtyTask(completionHandler: @escaping () -> Void) {
+        
+        // store completion handler
+        onTaskFinished = completionHandler
+        
+        // do lengthy task
+        onLengthyTaskFinished()
+    }
+    
+    func onLengthyTaskFinished() {
+        onTaskFinished?()
+    }
+    
+}
+
+let task = TaskManager()
+task.startLenghtyTask {
+    // print("execute following tasks after completion of main task. Ex: After downloading the heavy images or dataObject
+}
+

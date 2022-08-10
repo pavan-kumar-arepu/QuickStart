@@ -50,4 +50,13 @@
  11. 08/08/2022 -> Closure(Covered basics of Closures)
  Ref below blog up to 'TrailingClosures'
  https://abhimuralidharan.medium.com/functional-swift-all-about-closures-310bc8af31dd
+ 
+ 12. 09/08/2022 -> Closure(Detailed)
+ Home: Practice Clsoure
+ Ref: https://www.appypie.com/escaping-closures-swift
+ 
+ 13. 10/08/2022 -> (Detailed)
+
+
+ 
  */
