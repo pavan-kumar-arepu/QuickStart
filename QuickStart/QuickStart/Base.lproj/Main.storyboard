@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.05797101449286" y="43.526785714285715"/>
+            <point key="canvasLocation" x="174" y="555"/>
         </scene>
         <!--Title-->
         <scene sceneID="jwz-NJ-Wjw">
@@ -97,12 +97,6 @@
                                 <rect key="frame" x="56" y="522" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssg-HJ-AAl">
-                                <rect key="frame" x="297" y="295" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tIT-1M-xgd">
                                 <rect key="frame" x="20" y="108" width="374" height="32"/>
                                 <segments>
@@ -111,7 +105,16 @@
                                     <segment title="Banana"/>
                                     <segment title="Apple"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentControlTapped:" destination="iXP-1x-2CX" eventType="valueChanged" id="9MQ-RK-fRO"/>
+                                </connections>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-yU-HLh">
+                                <rect key="frame" x="347" y="179" width="49" height="31"/>
+                                <connections>
+                                    <action selector="tappedSwitch:" destination="iXP-1x-2CX" eventType="valueChanged" id="jxG-tv-JCh"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcl-3j-VbH"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -119,6 +122,7 @@
                             <constraint firstItem="KBd-gE-l0T" firstAttribute="centerY" secondItem="bcl-3j-VbH" secondAttribute="centerY" constant="-90.5" id="8jw-WW-djD"/>
                             <constraint firstItem="ZKg-4o-Qql" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="92q-y5-rfS"/>
                             <constraint firstItem="KBd-gE-l0T" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="HP9-3A-vsR"/>
+                            <constraint firstItem="uzr-yU-HLh" firstAttribute="top" secondItem="tIT-1M-xgd" secondAttribute="bottom" constant="40" id="Igi-Lg-Wsa"/>
                             <constraint firstItem="vHd-Xx-DJe" firstAttribute="top" secondItem="ZKg-4o-Qql" secondAttribute="bottom" constant="105" id="Iyr-cb-OQG"/>
                             <constraint firstItem="bcl-3j-VbH" firstAttribute="bottom" secondItem="ZKg-4o-Qql" secondAttribute="bottom" constant="174" id="R9Q-QU-FEN"/>
                             <constraint firstItem="tIT-1M-xgd" firstAttribute="top" secondItem="bcl-3j-VbH" secondAttribute="top" constant="20" id="RH3-8U-JNE"/>
@@ -129,16 +133,24 @@
                             <constraint firstItem="bcl-3j-VbH" firstAttribute="trailing" secondItem="tIT-1M-xgd" secondAttribute="trailing" constant="20" id="vg4-r9-wsI"/>
                             <constraint firstItem="5cQ-ZR-vCI" firstAttribute="centerX" secondItem="bcl-3j-VbH" secondAttribute="centerX" id="wWH-jX-Hht"/>
                             <constraint firstItem="tIT-1M-xgd" firstAttribute="leading" secondItem="bcl-3j-VbH" secondAttribute="leading" constant="20" id="xIh-LC-GQH"/>
+                            <constraint firstItem="bcl-3j-VbH" firstAttribute="trailing" secondItem="uzr-yU-HLh" secondAttribute="trailing" constant="20" id="zZ4-ss-ORH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="k6X-L1-brg"/>
                     <connections>
+                        <outlet property="backButton" destination="vHd-Xx-DJe" id="nSS-Jj-SLB"/>
+                        <outlet property="myImageView" destination="Cdw-Mv-Qxq" id="ERj-4k-lyv"/>
+                        <outlet property="myMapView" destination="4s2-PQ-g6W" id="n2z-1t-mCO"/>
                         <outlet property="myNewLabel" destination="KBd-gE-l0T" id="4Fh-WB-PZP"/>
+                        <outlet property="mySwitch" destination="uzr-yU-HLh" id="zvQ-jJ-yWr"/>
+                        <outlet property="nextViewButton" destination="ZKg-4o-Qql" id="Qwk-0N-Im2"/>
+                        <outlet property="segmentControl" destination="tIT-1M-xgd" id="FLR-hn-T9X"/>
+                        <outlet property="segmentLabel" destination="5cQ-ZR-vCI" id="WEV-1O-mgr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQ5-bj-hDf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.8115942028987" y="43.526785714285715"/>
+            <point key="canvasLocation" x="1903" y="757"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DKd-Tg-PjX">
@@ -181,47 +193,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Third View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZk-Qw-pas">
-                                <rect key="frame" x="118" y="438" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZk-Qw-pas">
+                                <rect key="frame" x="177" y="344.5" width="60" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-aU-ajD">
-                                <rect key="frame" x="184" y="658" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Kz-ou-hml">
-                                <rect key="frame" x="78" y="153" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kz-ou-hml">
+                                <rect key="frame" x="20" y="484" width="374" height="304"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sCb-2Z-lDY">
-                                <rect key="frame" x="139" y="342" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Hd7-LK-U6c">
+                                <rect key="frame" x="160" y="73" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="K44-Yd-eS5" eventType="valueChanged" id="zqM-so-UrS"/>
+                                </connections>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sCb-2Z-lDY">
+                                <rect key="frame" x="38" y="177" width="358" height="31"/>
                             </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-yU-HLh">
-                                <rect key="frame" x="347" y="40" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kJT-Dn-gVZ"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="kJT-Dn-gVZ" firstAttribute="bottom" secondItem="1Kz-ou-hml" secondAttribute="bottom" constant="20" id="0nf-dv-p9x"/>
+                            <constraint firstItem="Hd7-LK-U6c" firstAttribute="centerX" secondItem="kJT-Dn-gVZ" secondAttribute="centerX" id="1Vk-JH-Hh3"/>
                             <constraint firstItem="pZk-Qw-pas" firstAttribute="centerY" secondItem="kJT-Dn-gVZ" secondAttribute="centerY" id="27W-zw-x4L"/>
                             <constraint firstItem="pZk-Qw-pas" firstAttribute="centerX" secondItem="kJT-Dn-gVZ" secondAttribute="centerX" id="32q-kV-MJZ"/>
+                            <constraint firstItem="sCb-2Z-lDY" firstAttribute="top" secondItem="Hd7-LK-U6c" secondAttribute="bottom" constant="72" id="4Hz-8p-dmL"/>
+                            <constraint firstItem="1Kz-ou-hml" firstAttribute="leading" secondItem="kJT-Dn-gVZ" secondAttribute="leading" constant="20" id="Dtk-aK-gY2"/>
+                            <constraint firstItem="sCb-2Z-lDY" firstAttribute="leading" secondItem="STh-lk-vfH" secondAttribute="leadingMargin" constant="20" id="IaZ-b3-3OL"/>
+                            <constraint firstItem="1Kz-ou-hml" firstAttribute="top" secondItem="pZk-Qw-pas" secondAttribute="bottom" constant="20" id="J2Z-ON-uJM"/>
+                            <constraint firstItem="kJT-Dn-gVZ" firstAttribute="trailing" secondItem="1Kz-ou-hml" secondAttribute="trailing" constant="20" id="pqh-vT-9wu"/>
+                            <constraint firstAttribute="trailing" secondItem="sCb-2Z-lDY" secondAttribute="trailing" constant="20" id="uAX-LN-tA2"/>
+                            <constraint firstItem="Hd7-LK-U6c" firstAttribute="top" secondItem="kJT-Dn-gVZ" secondAttribute="top" constant="73" id="yg4-xX-NCy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cH8-qf-Khj"/>
+                    <connections>
+                        <outlet property="mySlider" destination="sCb-2Z-lDY" id="uwe-DS-Zzz"/>
+                        <outlet property="myStepper" destination="Hd7-LK-U6c" id="t2y-Ma-dIz"/>
+                        <outlet property="myWebView" destination="1Kz-ou-hml" id="Z2Z-XV-NnX"/>
+                        <outlet property="stepperLabel" destination="pZk-Qw-pas" id="BZx-ob-7FG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQG-OQ-HeE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2641" y="44"/>
+            <point key="canvasLocation" x="2640.579710144928" y="43.526785714285715"/>
         </scene>
     </scenes>
     <resources>

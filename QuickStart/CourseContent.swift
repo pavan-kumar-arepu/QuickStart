@@ -60,6 +60,16 @@
  Keep label bit below of imageView(maintain 20 pixels gap vertically)
  Keep map inbetween 'Label' and a 'button' 
  
+ 14. 15/08/2022 -> UI elements -
+ UI constaints Practice(Small Session)
 
+ 15. 16/08/2022 -> UI elements -
+ SegmentControl, Stepper, Switch, ProgressBar, ImageView, WebView, AlertView, ActionSheet, UIPageControl
  
+ 16. 17/08/2022 -> UI elements - UpComing
+ ProgressBar, WebView, AlertView, ActionSheet, UIPageControl
+ 
+ 17. 18/08/2022 -> UI elements -  UpComing
+ TableView and CollectionView
+  
  */
