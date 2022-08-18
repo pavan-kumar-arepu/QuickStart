@@ -64,12 +64,12 @@
  UI constaints Practice(Small Session)
 
  15. 16/08/2022 -> UI elements -
- SegmentControl, Stepper, Switch, ProgressBar, ImageView, WebView, AlertView, ActionSheet, UIPageControl
+ SegmentControl, Stepper, Switch, ProgressBar, ImageView, UIPageControl
  
- 16. 17/08/2022 -> UI elements - UpComing
+ 16. 18/08/2022 -> UI elements - UpComing
  ProgressBar, WebView, AlertView, ActionSheet, UIPageControl
  
- 17. 18/08/2022 -> UI elements -  UpComing
+ 17. -> UI elements -  UpComing
  TableView and CollectionView
-  
+
  */
