@@ -129,21 +129,17 @@ extension ThirdViewController {
         // Setting option/style of AlertViewController during initialisation
         // Title, Message, button
         
-        let alert = UIAlertController(title: "WebView Alert", message: "Webview loaded successfully", preferredStyle: UIAlertController.Style.alert)
-
-        /*
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
-                   //Cancel Action
-               }))
-               alert.addAction(UIAlertAction(title: "Sign out",
-                                             style: UIAlertAction.Style.destructive,
-                                             handler: {(_: UIAlertAction!) in
-                                               //Sign out action
-               }))
+        let alert = UIAlertController(title: "WebView Alert", message: "Webview loaded successfully", preferredStyle: UIAlertController.Style.actionSheet)
         
-        */
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
         
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Save&Continue", style: .default, handler: { _ in
             self.dismiss(animated: true, completion: nil)
         }))
         

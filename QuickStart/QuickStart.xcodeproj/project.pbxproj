@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B476BA828B3E8A900455EE6 /* CountryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B476BA728B3E8A900455EE6 /* CountryTableViewController.swift */; };
+		0B476BAD28B3E8D300455EE6 /* AppCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B476BAC28B3E8D300455EE6 /* AppCollectionViewController.swift */; };
 		0B5A136E28998B4C00D81841 /* FirstViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */; };
 		0B5A1378289AD48D00D81841 /* QuickStartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A1377289AD48D00D81841 /* QuickStartProtocols.swift */; };
 		0BF2EBBB287C8653008DA2D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2EBBA287C8653008DA2D8 /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B476BA728B3E8A900455EE6 /* CountryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewController.swift; sourceTree = "<group>"; };
+		0B476BAC28B3E8D300455EE6 /* AppCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewController.swift; sourceTree = "<group>"; };
 		0B56436728A189EA0055AEAA /* ClosureExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosureExamples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B5A1366289983B900D81841 /* Protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocol.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B5A136D28998B4C00D81841 /* FirstViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				0BF434982883488F0054FAAA /* SecondViewController.swift */,
 				0BF434A028834EB90054FAAA /* ThirdViewController.swift */,
 				0BF2EBC0287C8654008DA2D8 /* Main.storyboard */,
+				0B476BA728B3E8A900455EE6 /* CountryTableViewController.swift */,
+				0B476BAC28B3E8D300455EE6 /* AppCollectionViewController.swift */,
 				0BF2EBC6287C8656008DA2D8 /* Assets.xcassets */,
 				0BF2EBC8287C8656008DA2D8 /* LaunchScreen.storyboard */,
 				0BF2EBCB287C8656008DA2D8 /* Info.plist */,
@@ -328,9 +334,11 @@
 				0B5A1378289AD48D00D81841 /* QuickStartProtocols.swift in Sources */,
 				0BF2EBBF287C8653008DA2D8 /* FirstViewController.swift in Sources */,
 				0BF434A6288351CA0054FAAA /* CourseContent.swift in Sources */,
+				0B476BA828B3E8A900455EE6 /* CountryTableViewController.swift in Sources */,
 				0BF2EBBB287C8653008DA2D8 /* AppDelegate.swift in Sources */,
 				0BF2EBC5287C8654008DA2D8 /* QuickStart.xcdatamodeld in Sources */,
 				0BF434992883488F0054FAAA /* SecondViewController.swift in Sources */,
+				0B476BAD28B3E8D300455EE6 /* AppCollectionViewController.swift in Sources */,
 				0B5A136E28998B4C00D81841 /* FirstViewController+Extension.swift in Sources */,
 				0BF434A128834EB90054FAAA /* ThirdViewController.swift in Sources */,
 				0BF2EBBD287C8653008DA2D8 /* SceneDelegate.swift in Sources */,

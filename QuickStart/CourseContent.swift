@@ -67,9 +67,11 @@
  SegmentControl, Stepper, Switch, ProgressBar, ImageView, UIPageControl
  
  16. 18/08/2022 -> UI elements - UpComing
- ProgressBar, WebView, AlertView, ActionSheet, UIPageControl
+ ProgressBar, WebView, AlertView, ActionSheet
  
- 17. -> UI elements -  UpComing
- TableView and CollectionView
+ 17. 22/08/2022 -> UI elements - UIPageControl, UITableView
+ 
+ 18. 23/08/2022 -> UI elements - UITableView, Custom TableView, CollectionView
+ 
 
  */
