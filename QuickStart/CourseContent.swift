@@ -72,6 +72,9 @@
  17. 22/08/2022 -> UI elements - UIPageControl, UITableView
  Discussed on  UIPageControl, Basic UITableView
  
- 18. 23/08/2022 -> UI elements - UITableView, Custom TableView, CollectionView
+ 18. 23/08/2022 -> UI elements - UITableView, Custom TableView
+ Discussed on 'Custom TableView'
+ 
+ 19. 24/08/2022 --> CollectionView
  
  */
