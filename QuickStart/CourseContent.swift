@@ -70,8 +70,8 @@
  ProgressBar, WebView, AlertView, ActionSheet
  
  17. 22/08/2022 -> UI elements - UIPageControl, UITableView
+ Discussed on  UIPageControl, Basic UITableView
  
  18. 23/08/2022 -> UI elements - UITableView, Custom TableView, CollectionView
  
-
  */
