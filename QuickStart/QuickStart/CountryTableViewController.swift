@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CountryTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CountryTableViewController: UIViewController {
 
     
     @IBOutlet weak var countryTableView: UITableView!
@@ -47,11 +47,53 @@ class CountryTableViewController: UIViewController, UITableViewDataSource, UITab
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func alert(title: String, message: String, buttonTitle: String) -> Void {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        /*
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Save&Continue", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+ */
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func customAlert(_ title: String, _ message: String, _ buttonTitle: String) -> Void {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        /*
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Save&Continue", style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+ */
+        
+        present(alert, animated: true, completion: nil)
+    }
 
 }
 
 
-extension CountryTableViewController {
+extension CountryTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         studentAgeArray.count
     }
@@ -66,7 +108,6 @@ extension CountryTableViewController {
        // let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "TableViewCell")
         
        // let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! StudentTableViewCell
 
@@ -83,10 +124,17 @@ extension CountryTableViewController {
         cell.studentImageView.image = UIImage.init(named: "Bird")
 
         
-        print("Data --> Cell Address", cell.textLabel?.text as Any, cell )
+        print("Data --> Cell Address --> indexpath", cell.textLabel?.text as Any, cell, indexPath)
         
         // returning a cell
         return cell
     }
 
 }
+
+extension CountryTableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        alert(title: "TableView Alert", message: "You selected \(indexPath.row) and \(indexPath.section)", buttonTitle: "OK")
+    }
+}
+
