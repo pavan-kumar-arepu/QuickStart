@@ -76,5 +76,20 @@
  Discussed on 'Custom TableView'
  
  19. 24/08/2022 --> CollectionView
+ Discussed on 'Custom TableView'
  
+ 20. 30/08/2022 --> Gesture Recognisors
+ Discussed on 'Tap' and 'Swipe' gestures
+ https://github.com/ppam1524/Gestures_Swift
+ 
+ 21. Few Gestures, StackView and Scroll
+ Discussed on StackView: https://github.com/ppam1524/Stackview_Swift
+ 
+ 22. ScrollView - https://github.com/ppam1524/ScrollView_Swift
+ 
+ 22. Webservices
+ 
+ 23. CoreData
+ 
+ 24. MemoryMangement
  */
