@@ -105,19 +105,9 @@ extension CountryTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Creating a tableview cell
-       // let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "TableViewCell")
-        
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! StudentTableViewCell
 
-        
-        
-        // Prepare data or assign data
-//        cell.textLabel?.text = countryNames[indexPath.row]
-//        cell.imageView?.image = UIImage.init(named: "Bird")
-//        cell.detailTextLabel?.text = "DetailedTextLabel"
-        
         cell.studentAge.text = "\(studentAgeArray[indexPath.row])"
         cell.studentName.text = "\(studentNamesArray[indexPath.row])"
         cell.studentQualification.text = "\(studentQualificationArray[indexPath.row])"

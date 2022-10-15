@@ -92,4 +92,12 @@
  23. CoreData
  
  24. MemoryMangement
+ 
+ 25. Dependecy Managers - CocoaPods, Carthage, SPM - Swift Package Managers
+ 
+ 26. Sample Application Map integration with GooglePlacesAPI(5 hours) - https://github.com/ppam1524/TableViewFromGPlaces
+     Which covers tableview, Maps, Protocols, Swift Programming Basics, ThridPatry Integration, Webservices...
  */
+
+ 
+
